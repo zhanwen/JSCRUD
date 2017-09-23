@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>添加用户</title>
+	</head>
+	<script src="../js/jquery-1.4.2.js"></script>
+	<script src="jquery-plugin-namespace.js"></script>
+	<script src="table.js"></script>
+	<script src="user.js"></script>
+	<body>
+		<center>
+			<br><br>
+			添加用户:<br><br>
+			姓名: <input type="text" name="name" id="name" />&nbsp;&nbsp;
+			描述: <input type="text" name="description" id="description" /><br><br>
+			<br><br>
+			<hr>
+			<br><br>
+			<table id="usertable" border="1" cellpadding="5" cellspacing=0>
+				<tbody>
+					<tr>
+						<th field="description">描述</th>
+						<th field="name">姓名</th>
+						<th field="del">删除</th>
+						<th field="update">修改</th>
+					</tr>
+					
+					<button id="add">提交</button>
+					<button id="deleteUser">删除</button>
+				</tbody>
+			</table>
+			<br>
+			<br>
+			<br>
+			<hr>
+			修改用户:<br><br>
+			姓名: <input type="text" name="name" id="name_update" />&nbsp;&nbsp;
+			描述: <input type="text" name="email" id="description_update" /><br><br>
+			<input type="hidden" id="id_update"/>
+			<button id="updateUser">提交</button>
+		</center>
+	</body>
+</html>
+
